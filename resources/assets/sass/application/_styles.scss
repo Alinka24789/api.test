@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.12.2015, 15:48:53
+    Author     : alinka
+*/
+
+body {
+   font-family: 'PT Sans Narrow', sans-serif;
+   overflow-x: hidden;
+}
+
+.text-white {
+    color: $text-white;
+}
+
+.text-black {
+    color: $text-black;
+}
+
+.text-blue {
+    color: $text-blue;
+}
+
+.block-inline {
+    display: inline-block;
+}
+
+.block-left {
+    float: left;
+}
+
+.block-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.main-logo {
+    position: relative;
+    display: inline-block;
+    width: 178px;
+    height: 135px;
+    background: url('/images/polarbear.png') no-repeat;
+    background-size: 100% 100%;
+    &.logo-small {
+        width: 135px;
+        height: 94px;
+    }
+    &.navbar-brand {
+        width: 98px;
+        height: 67px;
+    }
+    
+    
+    @media only screen and (max-width: 768px),
+        only screen and (max-device-width: 768px) {
+        &.navbar-brand {
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+
+.page-error {
+    text-align: center;
+    background: $main_color;
+
+    .top-line {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 80px;
+        background-image: url('/images/ornament.png');
+        background-repeat: repeat;
+        background-size: auto 100%;
+        margin-top: 35px;
+        text-align: center;
+
+        .main-logo {
+            margin-top: -25px;
+        }
+    }
+
+
+    h1 {
+        margin-top: 50px;
+        color: $text-white;
+        font-size: 8em;
+    }
+    h2 {
+        color: $text-white;
+        font-size: 3em;
+    }
+} 

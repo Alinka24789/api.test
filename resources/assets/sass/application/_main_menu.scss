@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25.12.2015, 13:45:00
+    Author     : alinka papish
+*/
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    @media only screen and (max-width: 768px),
+        only screen and (max-device-width: 768px) {
+        text-align: center;
+    }
+}
+
+.main-menu {
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+    li {
+        display: inline-block;
+        a {
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            display: inline-block; 
+            
+            .active-line {
+                position: absolute;
+                top: 0;
+                width: 0%;
+                height: 3px;
+                background-color: white;
+                transition: all 0.1s ease-in-out 0.01s;
+            }
+            
+            [class^="flaticon-"]:before, 
+            [class*=" flaticon-"]:before, 
+            [class^="flaticon-"]:after,
+            [class*=" flaticon-"]:after {
+                font-size: 50px;
+                margin-left: 34px;
+                margin-right: 34px;
+            }
+            
+            &:hover, &.active {
+                .active-line {
+                    width: 100%;
+                }
+                [class^="flaticon-"]:before, 
+                    [class*=" flaticon-"]:before, 
+                    [class^="flaticon-"]:after,
+                    [class*=" flaticon-"]:after {
+                    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                }
+            }
+        }
+    }
+    
+    &.menu-right {
+        width: auto;
+        right: 0;
+        left: auto;
+    }
+    
+    @media only screen and (max-width: 768px),
+        only screen and (max-device-width: 768px) {
+        
+        position: relative;
+        width:auto;
+        
+        &.menu-right {
+            position: absolute;
+            right: 30px;
+        }
+        
+        li {
+            float: none;
+            width: 19%;
+            a {
+                [class^="flaticon-"]:before, 
+                    [class*=" flaticon-"]:before, 
+                    [class^="flaticon-"]:after,
+                    [class*=" flaticon-"]:after {
+                    font-size: 30px;
+                    margin-left: 14px;
+                    margin-right: 14px;
+                }
+            }
+        }
+        
+    }
+}
+
+.main-menu-right {
+    li {
+        display: inline-block;
+        a {
+            color: #fff;
+            text-decoration: none;
+            
+            [class^="flaticon-"]:before, 
+            [class*=" flaticon-"]:before, 
+            [class^="flaticon-"]:after,
+            [class*=" flaticon-"]:after {
+                font-size: 50px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+        }
+    }
+} 
