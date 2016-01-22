@@ -22,19 +22,19 @@
 
  1. Получить все категории: 
 
-	```GET http://<domen>/v1/categories?access_token=<access_token>```
+	```GET http://<domain>/v1/categories?access_token=<access_token>```
 
  2. Получить отсартированные категории:
 
-	```GET http://<domen>/v1/categories?sort=<ASC|DESC>&access_token=<access_token>```
+	```GET http://<domain>/v1/categories?sort=<ASC|DESC>&access_token=<access_token>```
 
  3. Получить конкретную категорию:
 
-	```GET http://<domen>/v1/categories/{id}?access_token=<access_token>```
+	```GET http://<domain>/v1/categories/{id}?access_token=<access_token>```
 	
  4. Добавить категорию:
 
-	```POST http://<domen>/v1/categories```
+	```POST http://<domain>/v1/categories```
 	
 	Поля:
 ```php
@@ -46,7 +46,7 @@
 
  5. Изменить категорию:
 
-	```PUT http://<domen>/v1/categories/{id}```
+	```PUT http://<domain>/v1/categories/{id}```
 	
 ```php
         Поля:
@@ -58,25 +58,25 @@
 
  6. Удалить категорию: 
 
-  ```DELETE http://<domen>/v1/categories/{id}?access_token=<access_token>```
+  ```DELETE http://<domain>/v1/categories/{id}?access_token=<access_token>```
 
  Работа с продуктами
 
  1. Получить весь список продуктов:
 
- 	```GET http://<domen>/v1/products?access_token=<access_token>```
+ 	```GET http://<domain>/v1/products?access_token=<access_token>```
 
  2. Получить конкретный продукт:
 
-	```GET http://<domen>/v1/products/{id}?access_token=<access_token>```
+	```GET http://<domain>/v1/products/{id}?access_token=<access_token>```
 
  3. Получить продукт по категории:
 
-	```GET http://<domen>/v1/categories/{categori_id}/products/{product_id}?access_token=<access_token>```
+	```GET http://<domain>/v1/categories/{categori_id}/products/{product_id}?access_token=<access_token>```
 
  4. Добавить продукт: 
 
-    ```POST http://<domen>/v1/products```
+    ```POST http://<domain>/v1/products```
 	
 	Поля:
 ```php
@@ -89,7 +89,7 @@
 
  5. Изменить продукт:
 
-	```PUT http://<domen>/v1/products/{id}```
+	```PUT http://<domain>/v1/products/{id}```
 
   Поля:
 ```php
@@ -102,4 +102,4 @@
 
  6. Удалить продукт: 
 
- ```DELETE http://<domen>/v1/products/{id}?access_token=<access_token>```
+ ```DELETE http://<domain>/v1/products/{id}?access_token=<access_token>```
